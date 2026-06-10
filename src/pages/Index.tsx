@@ -148,6 +148,61 @@ export default function Index() {
           </div>
         </section>
 
+        <section className="section-padding" style={{ borderBottom: "var(--border)" }}>
+          <h2 className="section-title" style={{ marginBottom: "50px", textAlign: "center" }}>СТАТИСТИКА КАРЬЕРЫ</h2>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "0", border: "var(--border)" }}>
+            {[
+              { num: "346", label: "Голов в карьере", tag: "Рекорд" },
+              { num: "3", label: "Клуба мирового топа", tag: "Барса · Реал · Интер" },
+              { num: "2×", label: "Лучший игрок мира FIFA", tag: "1996 и 1997" },
+              { num: "2002", label: "Чемпион мира", tag: "Финал vs Германия 2:0" },
+            ].map((item, i) => (
+              <div key={i} style={{
+                padding: "40px 30px",
+                borderRight: i < 3 ? "var(--border)" : "none",
+                background: i % 2 === 0 ? "var(--bg)" : "white",
+                textAlign: "center"
+              }}>
+                <div style={{ fontFamily: "Unbounded, sans-serif", fontSize: "56px", fontWeight: 800, lineHeight: 1, color: "var(--primary)", marginBottom: "10px" }}>{item.num}</div>
+                <div style={{ fontWeight: 800, fontSize: "14px", textTransform: "uppercase", marginBottom: "6px" }}>{item.label}</div>
+                <div style={{ fontSize: "12px", color: "#888", fontWeight: 600 }}>{item.tag}</div>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ marginTop: "60px" }}>
+            <h3 style={{ fontFamily: "Unbounded, sans-serif", fontSize: "24px", fontWeight: 800, textTransform: "uppercase", marginBottom: "30px" }}>Клубы</h3>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+              {[
+                { club: "Барселона", years: "1996–1997", goals: "47 голов", tag: "Лучший игрок мира" },
+                { club: "Интер Милан", years: "1997–2002", goals: "99 голов", tag: "Серебряная бутса" },
+                { club: "Реал Мадрид", years: "2002–2007", goals: "104 гола", tag: "Золотая бутса 2011" },
+                { club: "Сборная Бразилии", years: "1994–2006", goals: "62 гола", tag: "ЧМ 1994, 2002" },
+              ].map((item, i) => (
+                <div key={i} style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  padding: "20px 0",
+                  borderBottom: "var(--border)",
+                  flexWrap: "wrap",
+                  gap: "10px"
+                }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+                    <span style={{ fontFamily: "Unbounded, sans-serif", fontWeight: 800, fontSize: "18px" }}>{item.club}</span>
+                    <span style={{ color: "#888", fontSize: "13px" }}>{item.years}</span>
+                  </div>
+                  <div style={{ display: "flex", gap: "15px", alignItems: "center" }}>
+                    <span style={{ background: "var(--accent)", padding: "4px 12px", border: "2px solid var(--dark)", fontWeight: 800, fontSize: "13px" }}>{item.goals}</span>
+                    <span style={{ fontSize: "13px", color: "#666" }}>{item.tag}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="retro-vibe">
           <div>
             <h2 className="vibe-title">ВАЙБ-ЧЕК ПРОЙДЕН.</h2>
