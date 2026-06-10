@@ -4,77 +4,77 @@ export default function Index() {
       <div className="grain-overlay" />
 
       <header className="header">
-        <div className="logo">VINYL*DINER</div>
+        <div className="logo">ЗУБАСТИК*FC</div>
         <nav>
-          <a href="#">Меню</a>
-          <a href="#">О нас</a>
-          <a href="#">Афиша</a>
-          <a href="#">Адреса</a>
+          <a href="#">Карьера</a>
+          <a href="#">Голы</a>
+          <a href="#">Галерея</a>
+          <a href="#">О нём</a>
         </nav>
-        <button className="btn-cta">Забронировать</button>
+        <button className="btn-cta">Стать фанатом</button>
       </header>
 
       <main>
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              БЕЗ ПОНТОВ,
+              ЗУБАСТИК
               <br />
-              ТОЛЬКО <span>ВКУС</span>
+              НЕ <span>ПРОМАЖЕТ</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Эстетика 70-х в современной подаче. Локальные продукты, огненные блюда и атмосфера для настоящих ценителей.
+              Легенда поля. Бьёт зубами, бежит сердцем. Фан-сайт самого улыбчивого и беспощадного форварда в истории футбола.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Заказать
+                Все голы
               </button>
               <button className="btn-cta" style={{ background: "white" }}>
-                Смотреть меню
+                Биография
               </button>
             </div>
           </div>
-          <div className="hero-img">
+          <div className="hero-img" style={{ backgroundImage: `url("https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/4ecf0c50-2589-439e-adbc-0ae47ae8cc42.jpg")` }}>
             <div className="sticker">
-              СВЕЖАК
+              99 ГОЛОВ
               <br />
-              КАЖДЫЙ ДЕНЬ
+              В СЕЗОНЕ
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #ЭСТЕТИКА
+              #ЗУБАСТИК
             </div>
             <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
-              ОГОНЬ
+              ЛЕГЕНДА
             </div>
           </div>
         </section>
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ *
-            БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ
+            &nbsp; * ЗУБАСТИК СНОВА ЗАБИЛ * ЛУЧШИЙ ФОРВАРД * УЛЫБКА УБИЙЦЫ * СТАДИОН В ОГНЕ * ГЛАВНЫЙ ПО ГОЛАМ *
+            ЗУБАСТИК СНОВА ЗАБИЛ * ЛУЧШИЙ ФОРВАРД * УЛЫБКА УБИЙЦЫ * СТАДИОН В ОГНЕ * ГЛАВНЫЙ ПО ГОЛАМ
           </div>
         </div>
 
         <section className="section-padding">
           <div className="section-header">
-            <h2 className="section-title">ВЫБОР ШЕФА</h2>
+            <h2 className="section-title">КАРЬЕРА</h2>
             <a
               href="#"
               className="text-sm md:text-base"
               style={{ color: "var(--dark)", fontWeight: 800, textTransform: "uppercase" }}
             >
-              Всё меню
+              Все достижения
             </a>
           </div>
 
           <div className="menu-grid">
-            {/* Item 1 */}
+            {/* Карточка 1 */}
             <div className="menu-card">
-              <span className="menu-tag">Хит продаж</span>
+              <span className="menu-tag">Рекорд</span>
               <img
-                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Классический бургер"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/4ecf0c50-2589-439e-adbc-0ae47ae8cc42.jpg"
+                alt="Зубастик с мячом"
               />
               <div className="menu-card-body">
                 <div
@@ -85,23 +85,23 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Классика</h3>
-                  <span className="price">1 400 ₽</span>
+                  <h3>Лучший бомбардир</h3>
+                  <span className="price">99 голов</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Тройной смэш из мраморной говядины, фирменный соус, маринованные огурцы на бриоши.
+                  Абсолютный рекорд сезона. Никто не забивал столько и с такой улыбкой на лице.
                 </p>
               </div>
             </div>
 
-            {/* Item 2 */}
+            {/* Карточка 2 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Острое
+                Легенда
               </span>
               <img
-                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Неоновая пицца"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/16d9ddd0-5b11-45bf-bce9-ed79399a3b29.jpg"
+                alt="Портрет Зубастика"
               />
               <div className="menu-card-body">
                 <div
@@ -112,21 +112,21 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Электро Пепперони</h3>
-                  <span className="price">1 800 ₽</span>
+                  <h3>Золотая бутса</h3>
+                  <span className="price">5 раз</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Двойная пепперони, острый мёд, тесто на закваске.</p>
+                <p style={{ fontSize: "14px", color: "#666" }}>Пять раз признан лучшим бомбардиром чемпионата. Зубастик — это не имя, это статус.</p>
               </div>
             </div>
 
-            {/* Item 3 */}
+            {/* Карточка 3 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
-                Популярное
+                Любимый
               </span>
               <img
-                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Диско Сауэр"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/4e7c324c-b9b8-4dd6-be73-33b7eedbc2ad.jpg"
+                alt="Стадион фанатов"
               />
               <div className="menu-card-body">
                 <div
@@ -137,11 +137,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Диско Сауэр</h3>
-                  <span className="price">1 200 ₽</span>
+                  <h3>Любимец трибун</h3>
+                  <span className="price">100К+ фанатов</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Джин, цветок бузины, голубой чай и съедобная золотая пыльца.
+                  Когда Зубастик выходит на поле — стадион встаёт. Его улыбка заряжает 90 минут без остановки.
                 </p>
               </div>
             </div>
@@ -152,11 +152,10 @@ export default function Index() {
           <div>
             <h2 className="vibe-title">ВАЙБ-ЧЕК ПРОЙДЕН.</h2>
             <p className="vibe-text">
-              Мы не просто кормим. Мы создаём моменты. От плейлиста хип-хопа 90-х до диванов в стиле 70-х — каждый уголок
-              продуман для твоего идеального кадра. Бронь не нужна, просто приходи с настроением.
+              Зубастик — это не просто форвард. Это явление. Его улыбка шире ворот, а удар точнее лазера. С первого матча и до последнего свистка — он играет так, будто каждый гол первый.
             </p>
             <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
-              Наша история
+              Его история
             </button>
           </div>
           <div className="vibe-img"></div>
@@ -164,31 +163,31 @@ export default function Index() {
 
         <section className="section-padding">
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @VINYL.DINER
+            @ZUBASTIK.FC
           </h2>
           <div className="social-grid">
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 1"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/4ecf0c50-2589-439e-adbc-0ae47ae8cc42.jpg"
+                alt="Зубастик 1"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 2"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/4e7c324c-b9b8-4dd6-be73-33b7eedbc2ad.jpg"
+                alt="Зубастик 2"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 3"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/16d9ddd0-5b11-45bf-bce9-ed79399a3b29.jpg"
+                alt="Зубастик 3"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 4"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/4ecf0c50-2589-439e-adbc-0ae47ae8cc42.jpg"
+                alt="Зубастик 4"
               />
             </div>
           </div>
@@ -197,9 +196,9 @@ export default function Index() {
 
       <footer>
         <div>
-          <div className="footer-logo">VINYL*DINER</div>
+          <div className="footer-logo">ЗУБАСТИК*FC</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Твоё место для еды высокого качества и лоу-фай атмосферы. С 2024, но ощущается как 1974.
+            Официальный фан-сайт самого улыбчивого форварда планеты. Болеем с 1974, побеждаем каждый день.
           </p>
         </div>
         <div className="footer-links">
@@ -207,39 +206,63 @@ export default function Index() {
           <ul>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Меню
+                Карьера
               </a>
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                О нас
+                Голы
               </a>
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Политика
+                Галерея
               </a>
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Условия
+                О нём
               </a>
             </li>
           </ul>
         </div>
         <div className="footer-links">
-          <h4>Часы работы</h4>
+          <h4>Фан-клуб</h4>
           <ul>
-            <li>Вт-Чт: 12:00 - 23:00</li>
-            <li>Пт-Сб: 12:00 - 02:00</li>
-            <li>Вс: 11:00 - 21:00</li>
-            <li>Пн: Выходной</li>
+            <li>Пн–Пт: 10:00–22:00</li>
+            <li>Сб–Вс: 09:00–23:00</li>
+            <li style={{ marginTop: "10px" }}>В дни матчей — 24/7</li>
           </ul>
         </div>
-        <div className="footer-bottom">
-          <span>2025 VINYL DINER</span>
-          <span>ВКУС КЛАССИКИ</span>
-          <span>IG / TW / TK</span>
+        <div>
+          <h4>Следи за Зубастиком</h4>
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", marginTop: "15px" }}>
+            {["ВКонтакте", "Telegram", "YouTube"].map((s) => (
+              <a
+                key={s}
+                href="#"
+                style={{
+                  background: "var(--accent)",
+                  color: "var(--dark)",
+                  padding: "6px 14px",
+                  border: "2px solid var(--dark)",
+                  fontWeight: 800,
+                  fontSize: "12px",
+                  textDecoration: "none",
+                  display: "inline-block",
+                }}
+              >
+                {s}
+              </a>
+            ))}
+          </div>
+        </div>
+        <div
+          className="footer-bottom"
+          style={{ gridColumn: "1 / -1", borderTop: "var(--border)", paddingTop: "30px", marginTop: "20px" }}
+        >
+          <p>© 2024 ЗУБАСТИК*FC — Фан-сайт легенды футбола</p>
+          <p>Сделано с любовью к игре ⚽</p>
         </div>
       </footer>
     </>
