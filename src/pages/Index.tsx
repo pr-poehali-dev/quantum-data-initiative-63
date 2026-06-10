@@ -1,13 +1,20 @@
+const IMGS = {
+  hero: "https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/c1681069-54d3-49dc-ad5d-bb62ef24b523.jpg",
+  portrait: "https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/ea2aaf18-db9a-41f7-90f3-62578b1289b6.jpg",
+  gym: "https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/464e79ed-2110-4de5-b6f4-f15d3ad973b3.jpg",
+  pose: "https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/d09c6e13-31a1-4bd5-a4f5-a209090387b4.jpg",
+};
+
 export default function Index() {
   return (
     <>
       <div className="grain-overlay" />
 
       <header className="header">
-        <div className="logo">ЗУБАСТИК*FC</div>
+        <div className="logo">LEVRONE*FC</div>
         <nav>
           <a href="#">Карьера</a>
-          <a href="#">Голы</a>
+          <a href="#">Достижения</a>
           <a href="#">Галерея</a>
           <a href="#">О нём</a>
         </nav>
@@ -18,30 +25,30 @@ export default function Index() {
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              ЗУБАСТИК
+              КЕВИН
               <br />
-              НЕ <span>ПРОМАЖЕТ</span>
+              ЛЕВ<span>РОНИ</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Легенда поля. Бьёт зубами, бежит сердцем. Фан-сайт самого улыбчивого и беспощадного форварда в истории футбола.
+              «Мэрилендский мышечный автомат». 4× вице-чемпион Мистер Олимпия. Легенда бодибилдинга, рок-музыкант и непобедимый дух.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Все голы
+                Все титулы
               </button>
               <button className="btn-cta" style={{ background: "white" }}>
                 Биография
               </button>
             </div>
           </div>
-          <div className="hero-img" style={{ backgroundImage: `url("https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/762495ce-1c5b-4a0e-b370-b57178ffebad.jpg")` }}>
+          <div className="hero-img" style={{ backgroundImage: `url("${IMGS.hero}")` }}>
             <div className="sticker">
-              99 ГОЛОВ
+              4×
               <br />
-              В СЕЗОНЕ
+              ВИЦЕ-МИР
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #ЗУБАСТИК
+              #LEVRONE
             </div>
             <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
               ЛЕГЕНДА
@@ -51,97 +58,58 @@ export default function Index() {
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * ЗУБАСТИК СНОВА ЗАБИЛ * ЛУЧШИЙ ФОРВАРД * УЛЫБКА УБИЙЦЫ * СТАДИОН В ОГНЕ * ГЛАВНЫЙ ПО ГОЛАМ *
-            ЗУБАСТИК СНОВА ЗАБИЛ * ЛУЧШИЙ ФОРВАРД * УЛЫБКА УБИЙЦЫ * СТАДИОН В ОГНЕ * ГЛАВНЫЙ ПО ГОЛАМ
+            &nbsp; * МИСТЕР ОЛИМПИЯ 4× ВИЦЕ * МЭРИЛЕНДСКИЙ АВТОМАТ * РЕКОРДСМЕН СЦЕНЫ * ИКОНА 90-Х * ЖИВАЯ ЛЕГЕНДА *
+            МИСТЕР ОЛИМПИЯ 4× ВИЦЕ * МЭРИЛЕНДСКИЙ АВТОМАТ * РЕКОРДСМЕН СЦЕНЫ * ИКОНА 90-Х * ЖИВАЯ ЛЕГЕНДА
           </div>
         </div>
 
         <section className="section-padding">
           <div className="section-header">
             <h2 className="section-title">КАРЬЕРА</h2>
-            <a
-              href="#"
-              className="text-sm md:text-base"
-              style={{ color: "var(--dark)", fontWeight: 800, textTransform: "uppercase" }}
-            >
+            <a href="#" className="text-sm md:text-base" style={{ color: "var(--dark)", fontWeight: 800, textTransform: "uppercase" }}>
               Все достижения
             </a>
           </div>
 
           <div className="menu-grid">
-            {/* Карточка 1 */}
             <div className="menu-card">
               <span className="menu-tag">Рекорд</span>
-              <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/b508197b-bee8-4f26-8ec6-1423c958c391.jpg"
-                alt="Роналдо Назарио"
-              />
+              <img src={IMGS.portrait} alt="Кевин Леврон портрет" />
               <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <h3>Лучший бомбардир</h3>
-                  <span className="price">99 голов</span>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                  <h3>Мистер Олимпия</h3>
+                  <span className="price">4× вице</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Абсолютный рекорд сезона. Никто не забивал столько и с такой улыбкой на лице.
+                  Четыре раза занимал второе место на главном турнире планеты. Многие считают его настоящим чемпионом.
                 </p>
               </div>
             </div>
 
-            {/* Карточка 2 */}
             <div className="menu-card">
-              <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Легенда
-              </span>
-              <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/5fd8cf85-7f48-48ad-b8d4-9c781f1c4389.jpg"
-                alt="Роналдо Назарио 2002"
-              />
+              <span className="menu-tag" style={{ background: "var(--secondary)" }}>Мощь</span>
+              <img src={IMGS.gym} alt="Кевин Леврон в зале" />
               <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <h3>Золотая бутса</h3>
-                  <span className="price">5 раз</span>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                  <h3>Тренировки</h3>
+                  <span className="price">227 кг жим</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Пять раз признан лучшим бомбардиром чемпионата. Зубастик — это не имя, это статус.</p>
+                <p style={{ fontSize: "14px", color: "#666" }}>
+                  Жал лёжа 227 кг при собственном весе 125 кг. Силовые показатели, которым завидовали пауэрлифтеры.
+                </p>
               </div>
             </div>
 
-            {/* Карточка 3 */}
             <div className="menu-card">
-              <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
-                Любимый
-              </span>
-              <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/4e7c324c-b9b8-4dd6-be73-33b7eedbc2ad.jpg"
-                alt="Стадион фанатов"
-              />
+              <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>Икона</span>
+              <img src={IMGS.pose} alt="Кевин Леврон на сцене" />
               <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <h3>Любимец трибун</h3>
-                  <span className="price">100К+ фанатов</span>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                  <h3>Симметрия</h3>
+                  <span className="price">Идеал</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Когда Зубастик выходит на поле — стадион встаёт. Его улыбка заряжает 90 минут без остановки.
+                  Его пропорции называли совершенством. Дельты, грудь, спина — каждая мышца как скульптура.
                 </p>
               </div>
             </div>
@@ -153,10 +121,10 @@ export default function Index() {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "0", border: "var(--border)" }}>
             {[
-              { num: "346", label: "Голов в карьере", tag: "Рекорд" },
-              { num: "3", label: "Клуба мирового топа", tag: "Барса · Реал · Интер" },
-              { num: "2×", label: "Лучший игрок мира FIFA", tag: "1996 и 1997" },
-              { num: "2002", label: "Чемпион мира", tag: "Финал vs Германия 2:0" },
+              { num: "4×", label: "Вице-чемпион Мистер Олимпия", tag: "1992–2003" },
+              { num: "70+", label: "Профессиональных побед", tag: "IFBB Pro" },
+              { num: "227", label: "Кг жим лёжа", tag: "Рекорд сцены" },
+              { num: "2016", label: "Возвращение на Олимпию", tag: "В 51 год" },
             ].map((item, i) => (
               <div key={i} style={{
                 padding: "40px 30px",
@@ -172,13 +140,13 @@ export default function Index() {
           </div>
 
           <div style={{ marginTop: "60px" }}>
-            <h3 style={{ fontFamily: "Unbounded, sans-serif", fontSize: "24px", fontWeight: 800, textTransform: "uppercase", marginBottom: "30px" }}>Клубы</h3>
+            <h3 style={{ fontFamily: "Unbounded, sans-serif", fontSize: "24px", fontWeight: 800, textTransform: "uppercase", marginBottom: "30px" }}>Главные выступления</h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
               {[
-                { club: "Барселона", years: "1996–1997", goals: "47 голов", tag: "Лучший игрок мира" },
-                { club: "Интер Милан", years: "1997–2002", goals: "99 голов", tag: "Серебряная бутса" },
-                { club: "Реал Мадрид", years: "2002–2007", goals: "104 гола", tag: "Золотая бутса 2011" },
-                { club: "Сборная Бразилии", years: "1994–2006", goals: "62 гола", tag: "ЧМ 1994, 2002" },
+                { event: "Мистер Олимпия", years: "1992–2003", result: "4× серебро", tag: "Главный турнир мира" },
+                { event: "Arnold Classic", years: "1994–2002", result: "2× победитель", tag: "Арнольд Шварценеггер" },
+                { event: "Night of Champions", years: "1991–1999", result: "3× победитель", tag: "Нью-Йорк" },
+                { event: "Возвращение на Олимпию", years: "2016", result: "11-е место", tag: "В 51 год — легенда" },
               ].map((item, i) => (
                 <div key={i} style={{
                   display: "flex",
@@ -190,11 +158,11 @@ export default function Index() {
                   gap: "10px"
                 }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-                    <span style={{ fontFamily: "Unbounded, sans-serif", fontWeight: 800, fontSize: "18px" }}>{item.club}</span>
+                    <span style={{ fontFamily: "Unbounded, sans-serif", fontWeight: 800, fontSize: "18px" }}>{item.event}</span>
                     <span style={{ color: "#888", fontSize: "13px" }}>{item.years}</span>
                   </div>
                   <div style={{ display: "flex", gap: "15px", alignItems: "center" }}>
-                    <span style={{ background: "var(--accent)", padding: "4px 12px", border: "2px solid var(--dark)", fontWeight: 800, fontSize: "13px" }}>{item.goals}</span>
+                    <span style={{ background: "var(--accent)", padding: "4px 12px", border: "2px solid var(--dark)", fontWeight: 800, fontSize: "13px" }}>{item.result}</span>
                     <span style={{ fontSize: "13px", color: "#666" }}>{item.tag}</span>
                   </div>
                 </div>
@@ -205,45 +173,33 @@ export default function Index() {
 
         <section className="retro-vibe">
           <div>
-            <h2 className="vibe-title">ВАЙБ-ЧЕК ПРОЙДЕН.</h2>
+            <h2 className="vibe-title">НЕ ПРОСТО АТЛЕТ.</h2>
             <p className="vibe-text">
-              Зубастик — это не просто форвард. Это явление. Его улыбка шире ворот, а удар точнее лазера. С первого матча и до последнего свистка — он играет так, будто каждый гол первый.
+              Кевин Леврон — рок-музыкант, актёр и бизнесмен. Он выпускал альбомы, снимался в кино и вернулся на сцену Олимпии в 51 год. Его жизнь доказывает: настоящие легенды не уходят.
             </p>
             <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
               Его история
             </button>
           </div>
-          <div className="vibe-img"></div>
+          <div className="vibe-img" style={{ backgroundImage: `url("${IMGS.gym}")`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
         </section>
 
         <section className="section-padding">
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @ZUBASTIK.FC
+            @LEVRONE.FAN
           </h2>
           <div className="social-grid">
             <div className="social-item">
-              <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/b508197b-bee8-4f26-8ec6-1423c958c391.jpg"
-                alt="Роналдо портрет"
-              />
+              <img src={IMGS.portrait} alt="Кевин Леврон 1" />
             </div>
             <div className="social-item">
-              <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/762495ce-1c5b-4a0e-b370-b57178ffebad.jpg"
-                alt="Роналдо дриблинг"
-              />
+              <img src={IMGS.hero} alt="Кевин Леврон 2" />
             </div>
             <div className="social-item">
-              <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/1701634e-55f5-4e65-83e2-33d18a4b79d3.jpg"
-                alt="Роналдо гол"
-              />
+              <img src={IMGS.gym} alt="Кевин Леврон 3" />
             </div>
             <div className="social-item">
-              <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/5fd8cf85-7f48-48ad-b8d4-9c781f1c4389.jpg"
-                alt="Роналдо 2002"
-              />
+              <img src={IMGS.pose} alt="Кевин Леврон 4" />
             </div>
           </div>
         </section>
@@ -251,34 +207,17 @@ export default function Index() {
 
       <footer>
         <div>
-          <div className="footer-logo">ЗУБАСТИК*FC</div>
+          <div className="footer-logo">LEVRONE*FC</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Официальный фан-сайт самого улыбчивого форварда планеты. Болеем с 1974, побеждаем каждый день.
+            Официальный фан-сайт Кевина Леврона — «Мэрилендского мышечного автомата». С любовью к легенде бодибилдинга.
           </p>
         </div>
         <div className="footer-links">
           <h4>Навигация</h4>
           <ul>
-            <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Карьера
-              </a>
-            </li>
-            <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Голы
-              </a>
-            </li>
-            <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Галерея
-              </a>
-            </li>
-            <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                О нём
-              </a>
-            </li>
+            {["Карьера", "Достижения", "Галерея", "О нём"].map((l) => (
+              <li key={l}><a href="#" style={{ color: "inherit", textDecoration: "none" }}>{l}</a></li>
+            ))}
           </ul>
         </div>
         <div className="footer-links">
@@ -286,38 +225,29 @@ export default function Index() {
           <ul>
             <li>Пн–Пт: 10:00–22:00</li>
             <li>Сб–Вс: 09:00–23:00</li>
-            <li style={{ marginTop: "10px" }}>В дни матчей — 24/7</li>
+            <li style={{ marginTop: "10px" }}>В дни шоу — 24/7</li>
           </ul>
         </div>
         <div>
-          <h4>Следи за Зубастиком</h4>
+          <h4>Следи за Левроном</h4>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", marginTop: "15px" }}>
             {["ВКонтакте", "Telegram", "YouTube"].map((s) => (
-              <a
-                key={s}
-                href="#"
-                style={{
-                  background: "var(--accent)",
-                  color: "var(--dark)",
-                  padding: "6px 14px",
-                  border: "2px solid var(--dark)",
-                  fontWeight: 800,
-                  fontSize: "12px",
-                  textDecoration: "none",
-                  display: "inline-block",
-                }}
-              >
-                {s}
-              </a>
+              <a key={s} href="#" style={{
+                background: "var(--accent)",
+                color: "var(--dark)",
+                padding: "6px 14px",
+                border: "2px solid var(--dark)",
+                fontWeight: 800,
+                fontSize: "12px",
+                textDecoration: "none",
+                display: "inline-block",
+              }}>{s}</a>
             ))}
           </div>
         </div>
-        <div
-          className="footer-bottom"
-          style={{ gridColumn: "1 / -1", borderTop: "var(--border)", paddingTop: "30px", marginTop: "20px" }}
-        >
-          <p>© 2024 ЗУБАСТИК*FC — Фан-сайт легенды футбола</p>
-          <p>Сделано с любовью к игре ⚽</p>
+        <div className="footer-bottom" style={{ gridColumn: "1 / -1", borderTop: "var(--border)", paddingTop: "30px", marginTop: "20px" }}>
+          <p>© 2024 LEVRONE*FC — Фан-сайт легенды бодибилдинга</p>
+          <p>Сделано с уважением к величию 💪</p>
         </div>
       </footer>
     </>
