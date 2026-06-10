@@ -34,7 +34,7 @@ export default function Index() {
               </button>
             </div>
           </div>
-          <div className="hero-img" style={{ backgroundImage: `url("https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/4ecf0c50-2589-439e-adbc-0ae47ae8cc42.jpg")` }}>
+          <div className="hero-img" style={{ backgroundImage: `url("https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/deb6c676-bbde-403e-8932-2288874cceab.jpg")` }}>
             <div className="sticker">
               99 ГОЛОВ
               <br />
@@ -73,7 +73,7 @@ export default function Index() {
             <div className="menu-card">
               <span className="menu-tag">Рекорд</span>
               <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/4ecf0c50-2589-439e-adbc-0ae47ae8cc42.jpg"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/1833b305-fd7f-4dcc-bf2d-ce0cdd44c1d8.jpg"
                 alt="Зубастик с мячом"
               />
               <div className="menu-card-body">
@@ -100,7 +100,7 @@ export default function Index() {
                 Легенда
               </span>
               <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/16d9ddd0-5b11-45bf-bce9-ed79399a3b29.jpg"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/eb1865c5-f10d-46f7-80da-9dafeb799b38.jpg"
                 alt="Портрет Зубастика"
               />
               <div className="menu-card-body">
@@ -168,25 +168,25 @@ export default function Index() {
           <div className="social-grid">
             <div className="social-item">
               <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/4ecf0c50-2589-439e-adbc-0ae47ae8cc42.jpg"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/1833b305-fd7f-4dcc-bf2d-ce0cdd44c1d8.jpg"
                 alt="Зубастик 1"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/4e7c324c-b9b8-4dd6-be73-33b7eedbc2ad.jpg"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/deb6c676-bbde-403e-8932-2288874cceab.jpg"
                 alt="Зубастик 2"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/16d9ddd0-5b11-45bf-bce9-ed79399a3b29.jpg"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/080d969c-fd99-4de5-abb7-7a7628ad483b.jpg"
                 alt="Зубастик 3"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/4ecf0c50-2589-439e-adbc-0ae47ae8cc42.jpg"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/eb1865c5-f10d-46f7-80da-9dafeb799b38.jpg"
                 alt="Зубастик 4"
               />
             </div>
