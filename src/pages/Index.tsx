@@ -34,7 +34,7 @@ export default function Index() {
               </button>
             </div>
           </div>
-          <div className="hero-img" style={{ backgroundImage: `url("https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/deb6c676-bbde-403e-8932-2288874cceab.jpg")` }}>
+          <div className="hero-img" style={{ backgroundImage: `url("https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/762495ce-1c5b-4a0e-b370-b57178ffebad.jpg")` }}>
             <div className="sticker">
               99 ГОЛОВ
               <br />
@@ -73,8 +73,8 @@ export default function Index() {
             <div className="menu-card">
               <span className="menu-tag">Рекорд</span>
               <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/1833b305-fd7f-4dcc-bf2d-ce0cdd44c1d8.jpg"
-                alt="Зубастик с мячом"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/b508197b-bee8-4f26-8ec6-1423c958c391.jpg"
+                alt="Роналдо Назарио"
               />
               <div className="menu-card-body">
                 <div
@@ -100,8 +100,8 @@ export default function Index() {
                 Легенда
               </span>
               <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/eb1865c5-f10d-46f7-80da-9dafeb799b38.jpg"
-                alt="Портрет Зубастика"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/5fd8cf85-7f48-48ad-b8d4-9c781f1c4389.jpg"
+                alt="Роналдо Назарио 2002"
               />
               <div className="menu-card-body">
                 <div
@@ -168,26 +168,26 @@ export default function Index() {
           <div className="social-grid">
             <div className="social-item">
               <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/1833b305-fd7f-4dcc-bf2d-ce0cdd44c1d8.jpg"
-                alt="Зубастик 1"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/b508197b-bee8-4f26-8ec6-1423c958c391.jpg"
+                alt="Роналдо портрет"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/deb6c676-bbde-403e-8932-2288874cceab.jpg"
-                alt="Зубастик 2"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/762495ce-1c5b-4a0e-b370-b57178ffebad.jpg"
+                alt="Роналдо дриблинг"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/080d969c-fd99-4de5-abb7-7a7628ad483b.jpg"
-                alt="Зубастик 3"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/1701634e-55f5-4e65-83e2-33d18a4b79d3.jpg"
+                alt="Роналдо гол"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/eb1865c5-f10d-46f7-80da-9dafeb799b38.jpg"
-                alt="Зубастик 4"
+                src="https://cdn.poehali.dev/projects/9eb34a3a-2b3c-47fa-a200-389f6806b467/files/5fd8cf85-7f48-48ad-b8d4-9c781f1c4389.jpg"
+                alt="Роналдо 2002"
               />
             </div>
           </div>
